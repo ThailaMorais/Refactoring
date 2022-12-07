@@ -1,8 +1,5 @@
 public abstract class Price {
    public abstract int getPriceCode();
    
-   public double getCharge(int daysRented) {
-	return daysRented;
-	    
-   }
+   public abstract double getCharge(int daysRented);
 }
