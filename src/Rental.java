@@ -20,4 +20,11 @@ public class Rental {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	public int getFrequentRenterPoints() {
+
+		return 0;
+	}
+	
+	
 }
