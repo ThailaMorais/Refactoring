@@ -17,8 +17,7 @@ public class Rental {
    }
 
 	public double getCharge() {
-		// TODO Auto-generated method stub
-		return 0;
+		return _movie.getCharge(_daysRented);
 	}
 
 	public int getFrequentRenterPoints() {
