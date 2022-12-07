@@ -48,7 +48,7 @@ public class Customer {
      return result;
    }
 
-private double amountFor(Rental each) {
+private double amountFor(Rental aRental) {
 	// TODO Auto-generated method stub
 	return 0;
 }
