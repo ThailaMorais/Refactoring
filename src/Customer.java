@@ -25,7 +25,7 @@ public class Customer {
      while (rentals.hasMoreElements()) {
         double thisAmount = 0;
         Rental each = (Rental) rentals.nextElement();       
-        thisAmount = amountFor(each);
+        thisAmount = each.getCharge();
 
         
 
@@ -48,8 +48,5 @@ public class Customer {
      return result;
    }
 
-private double amountFor(Rental aRental) {
-	// TODO Auto-generated method stub
-	return 0;
-}
+ 
 }

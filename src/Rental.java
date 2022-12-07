@@ -15,4 +15,9 @@ public class Rental {
    public Movie getMovie() {
       return _movie;
    }
+
+	public double getCharge() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
