@@ -1,6 +1,6 @@
 # Refactoring
 # Aula prática - Refatoração
-# Instituto Federal de Educação, Ciência e Tecnologia do Ceará | Campus Canindé [
+# Instituto Federal de Educação, Ciência e Tecnologia do Ceará | Campus Canindé 
 
 Curso: Análise e Desenvolvimento de Sistemas <br>
 Disciplina: Tópicos Especiais em Programação <br>
