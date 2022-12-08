@@ -1,23 +1,10 @@
 import java.util.Enumeration;
 
-public class Statement{	
-	public String value(Customer aCustomer){
-	      Enumeration rentals = aCustomer.getRentals();
-	      String result = "Rental Record for " + aCustomer.getRentals() + "\n";
-	      while (rentals.hasMoreElements()) {
-	         Rental each = (Rental) rentals.nextElement();
+public abstract class Statement {
+	public abstract String statement(Enumeration<Rental> rentals, Customer customer);
 
-	         // show figures for this rental
-	         result += "\t" + each.getMovie().getTitle()+ "\t" +
-	                  String.valueOf(each.getCharge()) + "\n";
-	      }
-
-	      // add footer lines
-	      result +=  "Amount owed is " + String.valueOf(aCustomer.getTotalCharge()) + "\n";
-	      result += "You earned " + String.valueOf(aCustomer.getTotalFrequentRenterPoints()) +
-	                     " frequent renter points";
-	      return result;
-	   }
-
-
+	public String value(Customer aCustomer) {
+      return this.statement(aCustomer.getRentals(), aCustomer);
+   }
 }
+
